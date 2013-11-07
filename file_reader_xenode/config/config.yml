@@ -1,0 +1,7 @@
+---
+loop_delay: 5.0
+enabled: true
+debug: false
+path_only: false
+dir_path: "@this_node/test_data/"
+file_mask: '*.txt'
