@@ -1,4 +1,4 @@
-File-Reader-Xenode
+File Reader Xenode
 ==================
 
 **File Reader Xenode** monitors specific files in a local directory, fetches the files and pass them downstream to its children file by file.
