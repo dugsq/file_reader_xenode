@@ -40,8 +40,12 @@ class FileReaderXenode
     # write the config out to the log
     do_debug("#{mctx} - config: #{@config.inspect}", true)
     
-    @file_dir_path = @config[:dir_path]
-    
+    # get where to look for the file
+    # resolve_sys_dir() will replace any "tokens" (@this_node, @this_server)
+    # @this_node will be a file local to the instance of this Xenode
+    # @this_server will be a file local to all Xenodes 
+    @file_dir_path = resolve_sys_dir(@config[:dir_path])
+
     # file_mask of the file to read i.e. '*.txt'
     @file_mask = @config[:file_mask]
     
