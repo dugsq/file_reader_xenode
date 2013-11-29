@@ -1,7 +1,9 @@
 File Reader Xenode
 ==================
 
-**File Reader Xenode** monitors specific files in a local directory, fetches the files and pass them downstream to its children file by file.
+Note: you will need the Xenograte Community Toolkit (XCT) to run this Xenode. Refer to the XCT repo [https://github.com/Nodally/xenograte-xct](https://github.com/Nodally/xenograte-xct) for more information.
+
+**File Reader Xenode** monitors specific files in a local directory, fetches the files and pass them downstream to its children Xenode file by file.
 
 ###Configuration file options:
 * loop_delay: defines number of seconds the Xenode waits before running the Xenode process. Expects a float. 
